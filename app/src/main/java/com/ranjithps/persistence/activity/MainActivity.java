@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void getData(){
-
+        //TODO Need to implement data retrieval
         Toast.makeText(MainActivity.this, "The database response" , Toast.LENGTH_SHORT).show();
 
     }
