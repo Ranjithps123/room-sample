@@ -6,7 +6,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.nagarro.persistence.activity.MainActivity">
+        tools:context="com.ranjithps.persistence.activity.MainActivity">
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/click_here_btn"
@@ -17,6 +17,15 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/get_data_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Data"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/click_here_btn" />
 
     </android.support.constraint.ConstraintLayout>
 

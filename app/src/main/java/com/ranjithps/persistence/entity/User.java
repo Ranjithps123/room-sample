@@ -1,4 +1,4 @@
-package com.nagarro.persistence.entity;
+package com.ranjithps.persistence.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
