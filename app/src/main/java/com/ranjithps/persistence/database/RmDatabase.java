@@ -30,7 +30,7 @@ public abstract class RmDatabase extends RoomDatabase {
             synchronized (RmDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            RmDatabase.class, "confi_database")
+                            RmDatabase.class, "config_db")
                             // allow queries on the main thread.
                             // Don't do this on a real app!
                             .allowMainThreadQueries() //TODO: Only for testing purpose.

@@ -30,6 +30,11 @@ public class Config implements Serializable {
     @SerializedName("languages")
     private List<Language> languages;
 
+    @ColumnInfo
+    @SerializedName("allowed_countries")
+    @TypeConverters(Converter.class)
+    private List<String> countries;
+
     public int getId() {
         return id;
     }
@@ -60,6 +65,14 @@ public class Config implements Serializable {
 
     public void setLanguages(List<Language> languages) {
         this.languages = languages;
+    }
+
+    public List<String> getCountries() {
+        return countries;
+    }
+
+    public void setCountries(List<String> countries) {
+        this.countries = countries;
     }
 
 

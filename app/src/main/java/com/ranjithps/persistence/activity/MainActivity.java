@@ -2,6 +2,7 @@ package com.ranjithps.persistence.activity;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
@@ -58,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
         call.enqueue(new Callback<Config>() {
             @Override
-            public void onResponse(Call<Config> call, Response<Config> response) {
+            public void onResponse(@NonNull Call<Config> call, @NonNull Response<Config> response) {
                 Toast.makeText(MainActivity.this, "Got the response" , Toast.LENGTH_SHORT).show();
                 configRepository.insertOnlySingleRecord(response.body());
             }
 
             @Override
-            public void onFailure(Call<Config> call, Throwable t) {
+            public void onFailure(@NonNull Call<Config> call, @NonNull Throwable t) {
                 Toast.makeText(MainActivity.this, "Something went wrong...Error message: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });

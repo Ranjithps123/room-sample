@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 
 public interface APIInterface {
 
-    @GET("/bins/6dfbm")
+    @GET("/bins/18cssa")
     Call<Config> getConfiguration();
 }
